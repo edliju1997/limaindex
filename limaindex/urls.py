@@ -24,7 +24,7 @@ from limaindex.contato.views import ContactView, contact_success
 
 urlpatterns = i18n_patterns(
     url(_(r'^admin/'), admin.site.urls),
-    url(r'^', include('limaindex.portfolio.urls')),
+    url(r'^/', include('limaindex.portfolio.urls')),
     url(r'^contato/$', ContactView.as_view(), name='contact'),
     url(r'^contato/sucesso/', contact_success, name='contact_success'),
     url(r'^i18n/', include('django.conf.urls.i18n')),
