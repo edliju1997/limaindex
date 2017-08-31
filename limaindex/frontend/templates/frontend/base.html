@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static 'frontend/img/favicon.png' %}">
+
+    <title>Lima Index</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'frontend/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'frontend/css/album.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="collapse bg-inverse" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 py-4">
+            <h4 class="text-white">Redes Sociais</h4>
+            <ul class="list-unstyled">
+              <a href="#" target="_blank"><img src="{% static 'frontend/img/facebook.png' %}"></a>
+              <a href="#" target="_blank"><img src="{% static 'frontend/img/twitter.png' %}"></a>
+              <a href="#" target="_blank"><img src="{% static 'frontend/img/instagram.png' %}"></a>
+              <a href="#" target="_blank"><img src="{% static 'frontend/img/linkedin.png' %}"></a>
+              <a href="#" target="_blank"><img src="{% static 'frontend/img/github.png' %}"></a>
+              <a href="#" target="_blank"><img src="{% static 'frontend/img/telegram.png' %}"></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-inverse bg-inverse">
+      <div class="container d-flex justify-content-between">
+        <a href="/" class="navbar-brand">Lima Index</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    {% block conteudo %}{% endblock %}
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="/contato">Entre em contato!</a>
+        </p>
+        <p>Lima Index &copy; 2017</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="{% static 'frontend/js/jquery.min.js' %}"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="{% static 'frontend/js/holder.min.js' %}"></script>
+    <script>
+      $(function () {
+        Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+      });
+    </script>
+    <script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'frontend/js/ie10-viewport-bug-workaround.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "frontend/base.html" %}
+
+{% block conteudo %}
+        <div class="album text-muted">
+        <div class="container">
+          <h1 class="jumbotron-heading">Portfólio</h1>
+        <div class="row">
+    {% for inicio in index %}
+        <div class="card-inicio">
+            <a  href="{{ inicio.link }}"><img src="/media/{{ inicio.imagem }}" alt="{{ inicio.titulo }}"></a>
+            <p class="card-text">{{ inicio.titulo }}</p>
+        </div>
+    {% endfor %}
+        </div>
+        </div>
+        </div>
+
+
+{% endblock %}

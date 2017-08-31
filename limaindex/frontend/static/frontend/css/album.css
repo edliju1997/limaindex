@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Quicksand');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  color: #292b2c;
+}
+
+a:hover {
+  color: #292b2c;
+}
+
+.navbar {
+  margin-bottom: 0;
+  font-family: 'Lobster Two', cursive;
+}
+
+.col-sm-4 > ul > a > img {
+  width: 15%;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.card {
+  float: left;
+  width: 100%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  text-align: center;
+}
+
+.card-inicio {
+  float: left;
+  width: 50%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  text-align: center;
+}
+
+.card > a > img {
+  margin-bottom: .75rem;
+  width: 100%;
+}
+
+.card-inicio > a > img {
+  margin-bottom: .75rem;
+  width: 100%;
+}
+
+.card-text {
+  font-size: 100%;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.btn-danger {
+  color:#fff;
+  background-color:#292b2c;
+  border-color:#fff;
+}
+
+.btn-danger:hover {
+  color:#fff;
+  background-color:#292b2c;
+  border-color:#292b2c;
+}
+
+.text-muted {
+  color:#292b2c!important
+}
+
+a.text-muted:focus,a.text-muted:hover {
+  color:#292b2c!important
+}
