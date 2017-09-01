@@ -29,7 +29,7 @@ urlpatterns = i18n_patterns(
     url(r'^contato/sucesso/', contact_success, name='contact_success'),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     prefix_default_language=False
-)
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
     import debug_toolbar
