@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
   font-family: 'Quicksand', sans-serif;
@@ -14,7 +15,7 @@ a:hover {
 
 .navbar {
   margin-bottom: 0;
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .col-sm-4 > ul > a > img {
